@@ -621,7 +621,7 @@ footer {
     width: 700px;
 }
 .wk_mdl hr {
-    width: 767px;
+    max-width: 767px;
     text-align: center;
     height: 25px;
 }

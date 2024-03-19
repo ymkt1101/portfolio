@@ -71,7 +71,7 @@ function initializeSlick() {
 
 initializeSlick();
 
-$(window).on('resize', function() {
+$(window).on('load resize', function() {
   var elements = document.getElementsByClassName("skill");
   var windowWidth = window.innerWidth;
   // 画面幅/スキルの幅で商を計算 商が3より小さくなったらjustify-content:centerを設定する。
