@@ -706,10 +706,11 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .loading-animation {
-        width: 90vw;
-        height: 90vh;
-    }
+    /* .loading-animation {
+        width: 95vw;
+        height: 95vh;
+    } */
+
     .header {
         padding: 6% 0;
     }
