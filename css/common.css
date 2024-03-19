@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* cssリセット */
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #594c45;
+    font-family: "dnp-shuei-mgothic-std", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+/* リセットCSSここまで */
+html {
+    scroll-behavior: smooth;
+}
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #ffbe98;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loading.is-active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-animation {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #ffbe98;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-animation.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.border {
+    background-image: url(../images/block.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    overflow: hidden;
+    color: transparent;
+}
+
+/* サンクスページ */
+.thx_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 190, 152, 1);
+    z-index: 9999;
+}
+
+.thx_msg {
+    max-width: 767px;
+    padding-top: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.thx_msg img {
+    width: 300px;
+}
+
+.thx_msg li {
+    max-width: 90%;
+    padding: 5% 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thx_msg p {
+    color: #594c45;
+    font-size: clamp(1rem, 0.773rem + 0.97vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.thx_btn {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fffaf2;
+    line-height: 1.75;
+    width: 300px;
+    margin: 3% auto;
+    text-align: center;
+    background-color: #b39484;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 3px 0 0 rgba(33, 19, 15, 0.5);
+}

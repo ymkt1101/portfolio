@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    <meta name="description" content="DESIGN BLOCK 個人のポートフォリオサイトです">
+    <!-- <meta name="robots" content="noindex"> -->
+    <link rel="shortcut icon" href="images/icon/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/icon/android-chrome-192x192.png">
+
+    <!-- スタイルcssより前に記述 後から上書きするかもしれないから-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- lightbox css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+    <!-- スタイルcss -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQueryより後に記述 jqueryの拡張機能だから-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- lightbox js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="js/script.js" async></script>
+</head>
+
+<body>
+    <!-- ローディング画面 -->
+    <div class="loading">
+        <div class="loading-animation"> <img src="images/loading.gif" alt="LOADING"> </div>
+    </div>
+
+    <!-- サイドナビ -->
+    <div class="nv">
+        <img src="images/logo_menu.png" alt="menu logo">
+        <ul class="nv_menu">
+            <li><a href="#about_me">私について</a></li>
+            <li><a href="#work">私がつくったもの</a></li>
+            <li><a href="#contact">私にれんらく</a></li>
+        </ul>
+    </div>
+    <!-- ナビモーダル-->
+    <nav class="nv_mdl">
+        <ul>
+            <li><img src="images/logo_menu.png" alt="menu logo"></li>
+            <li><a href="#about_me">私について</a></li>
+            <li><a href="#work">私のつくったもの</a></li>
+            <li><a href="#contact">私にれんらく</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <!-- ハンバーガーメニュ -->
+            <div class="ham_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1 class="main">
+                <img src="images/logo_main.png" alt="DESIGN BLOCK">
+            </h1>
+            <p class="txt_area">
+                <span class="mv_bg">あなたの「こうしたい！」を</span>
+                <br><span class="mv_bg">1つ1つ積み上げて</span>
+                <br><span class="mv_bg">想いが詰まったサイトに。</span>
+            </p>
+        </header>
+        <div class="scroll">
+            <p>Scroll</p>
+        </div>
+        <section id="about_me" class="sec_bg">
+            <hr>
+            <h2 class="sec_ttl">私について</h2>
+            <div class="inner">
+                <div class="left_side">
+                    <p>わたべ まきえ</p>
+                    <img src="images/character.png" alt="character">
+                </div>
+                <div class="right_side">
+                    <p>ポートフォリオをご覧いただき、ありがとうございます。<br>
+                        これまで小売業のECサイト運営・管理担当として、<br class="pc_brk">
+                        責任感とやりがいを持って従事してきました。<br>
+                        クライアントとして1からサイト構築に携わった経験から、<br class="pc_brk">
+                        現状の問題点を洗い出し、解決をゴールとするデザインをご提供します。</p>
+                </div>
+            </div>
+            <h3 class="pf_subttl">できること</h3>
+            <div class="skill">
+                <ul class="group group_web">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+                <ul class="group group_app">
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                </ul>
+                <ul class="group group_ms">
+                    <li>Word</li>
+                    <li>Excel(VBA)</li>
+                    <li>Powerpoint</li>
+                    <li>Access</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+
+        <section id="work" class="work_area">
+            <h2 class="sec_ttl">私がつくったもの</h2>
+            <ul class="slider">
+                <li>
+                    <img src="images/dwork1.png" class="slick-thumbnail" alt="学割プランバナー"
+                        data-large="images/work/kadai1.jpg">
+                    <p class="work_txt">
+                        2023.11<br>
+                        学割プランバナー/スクール課題
+                    </p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.11
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空学割プランバナー(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        製作期間 1週間<br>春らしい雰囲気と、お得感を伝えることを意識して作成しました。
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/dwork2.png" class="slick-thumbnail" alt="旅行アプリ紹介サイトバナー"
+                        data-large="images/work/kadai2.jpg">
+                    <p class="work_txt">
+                        2023.11<br>
+                        旅行アプリ紹介バナー/スクール課題
+                    </p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.11
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空旅行アプリ紹介バナー(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        製作期間 10日間<br>アプリの雰囲気を伝える事を意識して作成しました。
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/dwork3_1.png" class="slick-thumbnail" alt="ハンバーガー発売告知バナー"
+                        data-large="images/work/kadai3-1-1.jpg">
+                    <p class="work_txt">
+                        2023.12<br>
+                        商品販売告知バナー1/スクール課題
+                    </p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.12
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空商品発売告知バナー(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        制作期間2週間<br>「高級感」を打ち出しつつ、手に取りたくなる商品の見せ方を意識して作成しました。
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/dwork3-2.png" class="slick-thumbnail" alt="ハンバーガー発売告知バナー"
+                        data-large="images/work/kadai3-2-1.jpg">
+                    <p class="work_txt">
+                        2023.12<br>
+                        商品販売告知バナー2/スクール課題
+                    </p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.12
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空商品発売告知バナー(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        製作期間 2週間<br>POPで商品に目を引くバナーを目指して作成しました。
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/dwork4.png" class="slick-thumbnail" alt="コワーキングスペースLP"
+                        data-large="images/work/work5_pc.png">
+                    <p class="work_txt">
+                        2023.12<br>
+                        コワーキングスペースLP/スクール課題</p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.12
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空コワーキングスペースLP(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        製作期間 3週間
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/dwork5.png" class="slick-thumbnail" alt="美容院サイトLP"
+                        data-large="images/work/work6_1.jpg">
+                    <p class="work_txt">
+                        2023.12<br>美容院サイトLP/スクール課題</p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.12
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空美容院サイトLP(デザインのみ)/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        制作期間2週間<br>
+                        20代～40代の女性をターゲットにサイトを構築しました。<br>
+                        明るい店内と親しみやすさを出しつつ、リピータの主目的である予約はすぐに行えるよう配慮しました。
+                    </div>
+                </li>
+
+                <li>
+                    <img src="images/cwork1.png" class="slick-thumbnail" alt="レシピ紹介サイトLP"
+                        data-large="images/work/work6_1.jpg">
+                    <p class="work_txt">
+                        2023.11<br>
+                        レシピ紹介サイトLP/スクール課題</p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2023.11
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空レシピ紹介サイトLP/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">
+                        製作期間 1週間<br>20代～40代の女性をターゲットにサイトを構築しました。<br>
+                        明るい店内と親しみやすさを出しつつ、リピータの主目的である予約はすぐに行えるよう配慮しました。
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cwork2.png" class="slick-thumbnail" alt="カフェショップ紹介LP"
+                        data-large="images/work/work6.png">
+                    <p class="work_txt">
+                        2024.01<br>カフェショップサイトLP/スクール課題</p>
+                    <div class="wk_mdl_txt1" style="display: none;">
+                        2024.01
+                    </div>
+                    <div class="wk_mdl_txt2" style="display: none;">
+                        架空カフェショップサイトLP/スクール課題
+                    </div>
+                    <div class="wk_mdl_txt3" style="display: none;">製作期間 2週間</div>
+                </li>
+            </ul>
+        </section>
+        <!-- モーダル -->
+        <div id="wk_modal" class="wk_mdl">
+            <div class="wk_mdl_inner">
+                <div class="wk_mdl_close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="modalDescription1" class="wk_mdl_txt1"></div>
+                <div id="modalDescription2" class="wk_mdl_txt2"></div>
+                <div id="modalDescription3" class="wk_mdl_txt3"></div>
+            </div>
+            <hr>
+            <img src="images/character.png" id="wk_modalImage" class="wk_mdl_cont" alt="">
+        </div>
+
+        <section id="contact" class="sec_bg">
+            <hr>
+            <h2 class="sec_ttl">私にれんらく</h2>
+            <!-- コンタクトフォーム -->
+            <p class="cont_txt">ご連絡をいただく場合は、<br class="sp_brk">下記のフォームをご利用ください。</p>
+            <div class="cont_frm">
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjiVO5EKg8mVj-gmTk6oifkY6utXf8JFc28oDOhpaW5Om9gQ/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="cont_ml_addr">
+                        <label for="email">返信先メールアドレス</label>
+                        <input id="email" type="email" name="entry.913021399" placeholder="example@mail.co.jp" required>
+                    </div>
+                    <div class="cont_ttl">
+                        <label for="title">件名</label>
+                        <input id="title" type="text" name="entry.446251065" placeholder="ご用件を入力してください" required>
+                    </div>
+
+                    <div class="cont_msg">
+                        <label for="msg">お問合せ内容</label>
+                        <textarea id="msg" name="entry.1055123631" placeholder="お問合せ内容を入力してください。" required></textarea>
+                    </div>
+                    <button type="submit" name="button" class="cont_btn" value="">送信</button>
+                </form>
+                <!-- サンクスページを表示する -->
+                <script>
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks.html';}">
+                </iframe>
+            </div>
+        </section>
+        <hr>
+
+        <footer>
+            <ul class="ft_menu">
+                <li><a href="#about_me">私について</a></li>
+                <li><a href="#work">私がつくったもの</a></li>
+                <li><a href="#contact">私にれんらく</a></li>
+            </ul>
+
+            <img class="ft_logo" src="images/logo_footer.png" alt="footer logo">
+            <p class="ft_copywrt">&copy;DESIGN BLOCK. All Right Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
